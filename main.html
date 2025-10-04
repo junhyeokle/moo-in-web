@@ -1,7 +1,38 @@
-<div style="width: 100%; display: flex; justify-content: center; background: white; overflow: visible;">
-  <div style="transform: scale(1.75); transform-origin: top center; overflow: visible; width: 1440px;">
-    <div style="display: flex; justify-content: center; width: 100%; background: white;">
-<div style="width: 100%; max-width: 1440px; height: 4006px; margin: 0 auto; position: relative; background: white; box-shadow: 0px 3px 6px rgba(18, 15, 40, 0.12); overflow: hidden">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Moo-in Main</title>
+
+<style>
+  body {
+    margin: 0;
+    background: white;
+  }
+
+  .scale-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+    overflow: hidden;
+    height: 100vh;
+    overflow-y: visible;
+  }
+
+  .scaled-content {
+    transform-origin: top center;
+    width: 1440px;
+    transition: transform 0.3s ease;
+  }
+</style>
+</head>
+
+<body>
+  <div class="scale-wrapper">
+    <div class="scaled-content" id="scaled-content">
+<div style="width: 100%; max-width: 1440px; margin: 0 auto; position: relative; background: white; box-shadow: 0px 3px 6px rgba(18, 15, 40, 0.12); overflow: visible;">
       <div style="position: relative; left: 50%; transform: translateX(-50%); width: 1440px;">
   <div style="width: 1440px; height: 810px; left: 0px; top: 5px; position: absolute; background: white">
     <div style="width: 1440px; height: 60px; left: 0px; top: 0px; position: absolute; background: white">
@@ -12,7 +43,7 @@
         <div onclick="window.location.href='Project_details.html'" style="cursor:pointer; width: 118px; height: 24px; left: 136px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0); overflow: hidden; border-radius: 6px">
          <div style="left: 12px; top: 1px; position: absolute; color: #6E7787; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 22px; word-wrap: break-word">Project details</div>
         </div>
-        <div onclick="window.location.href='Services1.html'" style="cursor:pointer; width: 75px; height: 24px; left: 61px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0); overflow: hidden; border-radius: 6px">
+        <div onclick="window.location.href='Services.html'" style="cursor:pointer; width: 75px; height: 24px; left: 61px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0); overflow: hidden; border-radius: 6px">
           <div style="left: 12px; top: 1px; position: absolute; color: #6E7787; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 22px; word-wrap: break-word">Service</div>
         </div>
         <div onclick="window.location.href='Main.html'" style="cursor:pointer; width: 58px; height: 24px; left: 254px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0); overflow: hidden; border-radius: 6px">
@@ -63,7 +94,7 @@
   </div>
   <div style="width: 1440px; height: 1102px; left: 0px; top: 2158px; position: absolute; background: white">
     <div style="left: 537px; top: 48px; position: absolute; text-align: center; color: #171A1F; font-size: 48px; font-family: Archivo; font-weight: 600; line-height: 68px; word-wrap: break-word">Recent projects</div>
-    <div onclick="window.location.href='Services2.html'" style="cursor:pointer; width: 200px; height: 44px; left: 620px; top: 996px; position: absolute; background: #1D2128; overflow: hidden; border-radius: 6px; outline: 1px rgba(0, 0, 0, 0) solid; outline-offset: -1px">
+    <div onclick="window.location.href='Services.html'" style="cursor:pointer; width: 200px; height: 44px; left: 620px; top: 996px; position: absolute; background: #1D2128; overflow: hidden; border-radius: 6px; outline: 1px rgba(0, 0, 0, 0) solid; outline-offset: -1px">
       <div style="left: 60.50px; top: 9px; position: absolute; text-align: center; color: white; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 26px; word-wrap: break-word">view more</div>
     </div>
     <div style="width: 368px; height: 382px; left: 132px; top: 152px; position: absolute; background: white; overflow: hidden; outline: 1px #DEE1E6 solid; outline-offset: -1px">
@@ -172,7 +203,7 @@
           <div style="width: 4.97px; height: 9.94px; left: 12.16px; top: 5.03px; position: absolute; outline: 1.70px white solid; outline-offset: -0.85px"></div>
         </div>
       </div>
-    <div onclick="window.location.href='Services1.html'" style="cursor:pointer; left: 580px; top: 104px; position: absolute; color: white; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 26px; word-wrap: break-word">Services</div>
+    <div onclick="window.location.href='Services.html'" style="cursor:pointer; left: 580px; top: 104px; position: absolute; color: white; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 26px; word-wrap: break-word">Services</div>
     <div onclick="window.open('https://www.youtube.com', '_blank')" style="cursor:pointer; width: 24px; height: 24px; left: 1392px; top: 285px; position: absolute; overflow: hidden">
       <div style="width: 19.20px; height: 13.56px; left: 2.40px; top: 5.22px; position: absolute; background: white"></div>
     </div>
@@ -192,6 +223,21 @@
     <img style="width: 231px; height: 107px; left: 212px; top: 23px; position: absolute" src="https://placehold.co/231x107" />
   </div>
 </div>
-</div>
+    </div>
   </div>
-</div>
+
+  <script>
+    function updateScale() {
+      const baseWidth = 1440;
+      const currentWidth = window.innerWidth;
+      const scale = currentWidth / baseWidth;
+
+      const content = document.getElementById("scaled-content");
+      content.style.transform = `scale(${scale})`;
+    }
+
+    window.addEventListener("resize", updateScale);
+    window.addEventListener("load", updateScale);
+  </script>
+</body>
+</html>
