@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Moo-in Main</title>
+
+<style>
+  body {
+    margin: 0;
+    background: white;
+  }
+
+  .scale-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+    overflow: hidden;
+    height: 100vh;
+    overflow-y: visible;
+  }
+
+  .scaled-content {
+    transform-origin: top center;
+    width: 1440px; /* 디자인 기준 해상도 */
+    transition: transform 0.3s ease;
+  }
+</style>
+</head>
+
+<body>
+  <div class="scale-wrapper">
+    <div class="scaled-content" id="scaled-content">
+      <!-- 여기에 네 전체 HTML 코드 붙여넣기 -->
+    </div>
+  </div>
+
+  <script>
+    function updateScale() {
+      const baseWidth = 1440; // 네가 디자인한 기준 해상도
+      const currentWidth = window.innerWidth;
+      const scale = currentWidth / baseWidth;
+
+      const content = document.getElementById("scaled-content");
+      content.style.transform = `scale(${scale})`;
+    }
+
+    window.addEventListener("resize", updateScale);
+    window.addEventListener("load", updateScale);
+  </script>
+</body>
+</html>
